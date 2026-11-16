@@ -4,10 +4,10 @@
 import random
 
 computer = random.randint(1,3)
-gamestr = input("Enter your choice: ")
+gamestr = input("Enter your choice: ").lower()
 gamedict = { "s" : 1,
              "p" : 2,
-             "si" : 3} 
+             "si" : 3}
 reversedict = {1 : "Stone",
                2 : "Paper",
                3 : "Scissor"}
@@ -22,19 +22,18 @@ print(f"Computer choice is {reversedict[computer]}")
 
 if(computer == game):
     print("Draw!!")
-else:
-    if(computer == 1 and game == 2):
+elif(computer == 1 and game == 2):
         print("You Win!!")
-    elif(computer == 1 and game == 3):
+elif(computer == 1 and game == 3):
         print("You lose!")
-    if(computer == 2 and game == 1):
+elif(computer == 2 and game == 1):
         print("You lose!")
-    elif(computer == 2 and game == 3):
+elif(computer == 2 and game == 3):
         print("You win!")
-    if(computer == 3 and game == 1):
-        print("You lose!")
-    elif(computer == 3 and game  == 2):
-        print("You win!!")            
+elif(computer == 3 and game == 1):
+        print("You Win!")
+elif(computer == 3 and game  == 2):
+        print("You lose!!")            
     
    
         
